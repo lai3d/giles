@@ -34,3 +34,7 @@ Assets/Debug*
 Assets/ShaderForge
 Assets/ShaderForge.meta
 *sublime-workspace
+.vs/giles/v15/Server/sqlite3/storage.ide-wal
+.vs/giles/v15/Server/sqlite3/storage.ide-shm
+.vs/giles/v15/Server/sqlite3/storage.ide
+.vs/giles/v15/Server/sqlite3/db.lock
