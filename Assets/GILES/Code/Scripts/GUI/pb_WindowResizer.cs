@@ -33,7 +33,9 @@ namespace GILES.Interface
 
 			window.position += (Vector3) eventData.delta * .5f;
 
-			Vector2 flip = new Vector2(eventData.delta.x, -eventData.delta.y);
+            Vector2 flip = new Vector2 (eventData.delta.x, -eventData.delta.y);
+
+            Debug.Log (string.Format("x: {0} y: {1}", eventData.delta.x, eventData.delta.y));
 
 			window.sizeDelta += flip;
 
@@ -41,29 +43,27 @@ namespace GILES.Interface
 
 			float w = window.rect.width, h = window.rect.height;
 
-			if( w < minSize.x || w > maxSize.x || (r.x + r.width > screenRect.width) )
-			{
-				Vector2 size = window.sizeDelta;
-				size.x -= flip.x;
-				window.sizeDelta = size;
+            if (w < minSize.x || w > maxSize.x || (r.x + r.width > screenRect.width)) {
+                Vector2 size = window.sizeDelta;
+                size.x -= flip.x;
+                window.sizeDelta = size;
 
-				Vector3 pos = window.position;
-				pos.x -= eventData.delta.x * .5f;
-				window.position = pos;
-			}
+                Vector3 pos = window.position;
+                pos.x -= eventData.delta.x * .5f;
+                window.position = pos;
+            }
 
-			if( h < minSize.y || h > maxSize.y || (r.y - r.height < 0) )
-			{
-				Vector2 size = window.sizeDelta;
-				size.y -= flip.y;
-				window.sizeDelta = size;
+            if (h < minSize.y || h > maxSize.y || (r.y - r.height < 0)) {
+                Vector2 size = window.sizeDelta;
+                size.y -= flip.y;
+                window.sizeDelta = size;
 
-				Vector3 pos = window.position;
-				pos.y -= eventData.delta.y * .5f;
-				window.position = pos;
-			}
+                Vector3 pos = window.position;
+                pos.y -= eventData.delta.y * .5f;
+                window.position = pos;
+            }
 
-			foreach(pb_IOnResizeHandler handler in window.transform.GetComponentsInChildren<pb_IOnResizeHandler>())
+            foreach (pb_IOnResizeHandler handler in window.transform.GetComponentsInChildren<pb_IOnResizeHandler>())
 				handler.OnResize();
 		}
 	}
