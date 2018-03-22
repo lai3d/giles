@@ -1783,22 +1783,6 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
---- !u!1 &629486435 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1925060969996662, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-    type: 2}
-  m_PrefabInternal: {fileID: 723990528}
---- !u!114 &629486443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 629486435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 311623932263de14eb94dc3e3a1b9429, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &661897879
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,50 +2127,85 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114838463266121184, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: rulerBasis.AxisColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114280072076268608, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114280072076268608, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114280072076268608, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114280072076268608, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114280072076268608, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: m_Color.a
-      value: 0.377
-      objectReference: {fileID: 0}
-    - target: {fileID: 114169595614357018, guid: 58b131cb4a68f6444b5013c5235bf9a5,
-        type: 2}
-      propertyPath: isFloorPlan
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 223101254625075102, guid: 58b131cb4a68f6444b5013c5235bf9a5,
         type: 2}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1263645849}
-    - target: {fileID: 223101254625075102, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
         type: 2}
-      propertyPath: m_RenderMode
-      value: 2
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -131.43219
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 117.88019
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 7.7528076
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557968954390260, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -22.43982
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224969692840850408, guid: 58b131cb4a68f6444b5013c5235bf9a5,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 58b131cb4a68f6444b5013c5235bf9a5, type: 2}
@@ -3007,7 +3026,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 945199128}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 465.0001, y: 0, z: 0}
+  m_LocalPosition: {x: 420, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 103420215}
@@ -3419,7 +3438,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1013718116}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 400.50006, y: 0, z: 0}
+  m_LocalPosition: {x: 378, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1342621379}

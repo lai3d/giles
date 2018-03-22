@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PivotChanger : MonoBehaviour, IPointerClickHandler {
     //public Camera uiCamera;
-
+    public RectTransform pivotIndicator;
     private RectTransform rectTransform;
 
     public void OnPointerClick (PointerEventData eventData) {
@@ -17,13 +17,16 @@ public class PivotChanger : MonoBehaviour, IPointerClickHandler {
             //RectTransformUtility.ScreenPointToLocalPointInRectangle (rectTransform, pos, null, out localPoint);
             Debug.Log ("localPoint: " + localPoint.ToString ());
             
-            var pivot = Rect.PointToNormalized (rectTransform.rect, localPoint);
+            Vector2 pivot = Rect.PointToNormalized (rectTransform.rect, localPoint);
+            Debug.Log ("Pivot: " + pivot.ToString());
 
             Vector2 size = rectTransform.rect.size;
             Vector2 deltaPivot = rectTransform.pivot - pivot;
             Vector3 deltaPosition = new Vector3 (deltaPivot.x * size.x, deltaPivot.y * size.y);
             rectTransform.pivot = pivot;
             rectTransform.localPosition -= deltaPosition;
+            
+            pivotIndicator.position = rectTransform.position;
         }
     }
 
@@ -34,9 +37,6 @@ public class PivotChanger : MonoBehaviour, IPointerClickHandler {
 	
 	// Update is called once per frame
 	void Update () {
-		//if(Input.GetMouseButtonDown(1)) {
-  //          Debug.Log ("Pressed right click.");
-            
-  //      }
-	}
+        pivotIndicator.position = rectTransform.position;
+    }
 }
